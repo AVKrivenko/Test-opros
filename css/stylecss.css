@@ -1,0 +1,213 @@
+/* Обнуление */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+    color: #252B42;
+    font-family: 'Oswald', sans-serif;  
+    font-weight: 500;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;
+display: block;
+max-width: 100%;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+ /*-------------------- */
+ 
+
+.main {
+    background-image: url(../img/background2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 820px;
+    font-family:'Ubuntu',sans-serif;
+    background-repeat: repeat-x;
+    animation: slide 90s linear infinite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+    
+
+
+}
+.quiz {
+	position: relative;
+	padding: 2rem 2rem calc(2rem + 70px);
+
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+	width: 600px;
+	max-width: 95vw;
+	overflow: hidden;
+    background-color: rgb(194, 194, 175);
+}
+
+.title{
+	font-size: 2rem;
+	padding: 2rem 0;
+	text-align: center;
+	margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.summary {
+	text-align: center;
+	margin: 0.5rem 0 1rem;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.result {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.quiz-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.quiz-list li {
+	font-size: 1.2rem;
+}
+
+.quiz-list label {
+	cursor: pointer;
+	width: 100%;
+    display: block;
+	padding: 1rem 0.5rem;
+}
+
+.quiz-list label:hover {
+	background-color: seashell;
+}
+
+.quiz-list label.correct {
+	color: rgb(36, 144, 77);
+	font-weight: bold;
+}
+
+.quiz-list label.disabled {
+	cursor: no-drop;
+}
+
+.quiz-list label.disabled:hover {
+	cursor: no-drop;
+	background-color: transparent;
+}
+
+.quiz-list label.wrong {
+	color: rgb(218, 59, 59);
+	font-weight: bold;
+}
+
+.quiz-list input[type="radio"] {
+	margin-right: 10px;
+}
+
+.quiz-submit {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 70px;
+	line-height: 70px;
+}
+
+.submit {
+	background-color: #181618;
+	color: #fff;
+	border: none;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	font-size: 1.1rem;
+	font-family: inherit;
+
+}
+
+.submit:hover {
+	background-color: rgb(194, 194, 175);
+}
+
+.submit:focus {
+	outline: none;
+	background-color: #1d1515;
+}
+
+.submit.next {
+	background-color: #000000;
+}
+
+.submit.next:hover {
+	background-color: #222222;
+}
+
+.submit.next:focus {
+	outline: none;
+	background-color: #444444;
+}
+
+.quiz-list.shake {
+	animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+	color: #94ca00;
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+img{
+    width: 200px;
+    margin: 0 auto;
+}
+
